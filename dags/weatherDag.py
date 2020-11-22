@@ -91,7 +91,7 @@ dag = DAG(
 task1 = BashOperator(
     task_id='get_weather',
 
-    bash_command="python ~/dags/src/getWeather.py   Dresden, Berlin, Hamburg ",  # '{{params.CITY}}'
+    bash_command="python ~/dags/src/getWeather.py   Patna, Dresden, Berlin, Cologne, Delhi, Mumbai ",  # '{{params.CITY}}'
     # params={'CITY': ['Dresden', 'Berlin', 'Hamburg']},
     # bash_command='python C:/Users/49176/PycharmProjects/WeatherETL/dags/src/getWeather.py',
     dag=dag)
