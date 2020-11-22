@@ -1,13 +1,8 @@
 import requests
-import json
-from datetime import datetime
 import os
 import sys
 import pickle
 
-
-# defining variables
-# json_data = ''
 
 def get_weather(cities):
     """
